@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="200dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/progress_dialog_cat_background">
+
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:src="@drawable/progress_cat_mouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mouse"/>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/progress_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cat"/>
+
+        <ImageView
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/progress_cat_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eye_left"/>
+
+        <org.ciicsrgateway.mycat.ProgressCatEyelidView
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/progress_cat_eyes"
+            android:layout_width="24dp"
+            android:layout_height="15dp"
+            android:id="@+id/eyelid_left"/>
+
+        <ImageView
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/progress_cat_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eye_right"/>
+
+        <org.ciicsrgateway.mycat.ProgressCatEyelidView
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/progress_cat_eyes"
+            android:layout_width="24dp"
+            android:layout_height="15dp"
+            android:id="@+id/eyelid_right"/>
+
+    </RelativeLayout>
+
+    <com.hanks.htextview.HTextView
+        android:id="@+id/text2"
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:gravity="center"
+        htext:animateType="scale"
+        android:layout_below="@+id/mouse"
+        android:text="L O A D I N G . . ."
+        android:textColor="#fff"
+        android:textSize="13sp"/>
+
+</RelativeLayout>
+</LinearLayout>
